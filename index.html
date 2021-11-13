@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
     <!-- META TAGS -->
+	<meta charset="UTF-8">
     <meta name="keywords" content="Game Programming, C++, C#, Unity Engine, Champlain College">
     <meta name="author" content="Colin Deane">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,49 @@
     <title>Colin Deane - Programmer</title>
   </head>
   <body>
-  <div class="banner"></div>
-  <div class="banner-text">
-	<h1>Colin Deane</h1>
-	<p>Game Programming</p>
+	<!-- NAVBAR -->
+	<div id="navbar">
+		<nav class="w3-bar w3-black">
+			<a href="index.html" class="w3-button w3-bar-item">Home</a>
+			<a href="allprojects.html" class="w3-button w3-bar-item">All projects</a>
+			<a href="resume.pdf" class="w3-button w3-bar-item">Resume</a>
+		</nav>
 	</div>
-    <p title="Testing!!">test</p>
+	<!-- BANNER -->
+	<div id="banner">
+	</div>
+	<!-- FEATURED PROJECT -->
+	<div id="featured-project">
+	</div>
+	<!-- OTHER PROJECTS -->
+	<div id="other-projects">
+	</div>
+	<!-- ABOUT ME -->
+	<div id="about-me">
+	</div>
+	<!-- FOOTER -->
+	<div id="footer">
+		<footer>
+		</footer>
+	</div>
+	
+	<!-- SCRIPTS -->
+	<script>
+	var myIndex=0;
+	carousel();
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("slideshow");
+		for(i = 0; i < x.length; i++)
+		{
+			x[i].style.display="none";
+		}
+		myIndex++;
+		if(myIndex > x.length;) {myIndex = 1}
+		x[myIndex-1].style.display = "block";
+		setTimeout(carousel, 3000);
+	}
+	</script>
+	
   </body>
 </html>
