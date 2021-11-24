@@ -14,7 +14,25 @@
 	<style>
 		.tstyle-raleway {
 			font-family: Raleway, sans-sarif;
-		}		
+		}
+		.auto-resizable-iframe {
+			max-width: 650px;
+			margin: 0px auto;
+		}
+
+		.auto-resizable-iframe > div {
+			position: relative;
+			padding-bottom: 75%;
+			height: 0px;
+		}
+
+		.auto-resizable-iframe iframe {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+		}
 	</style>
     <title>Colin Deane - Programmer</title>
   </head>
@@ -46,8 +64,10 @@
 			<div class="w3-container w3-mobile w3-right-align">
 					<img class="mySlides1" src="/images/busybeemovers/busybeepicture.png" align="right" alt="Busybee Movers" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px gray">
 					<img class="mySlides1" src="/images/busybeemovers/screenshot2.PNG" align="right" alt="Busybee Movers" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px gray">
-					<div style="width:100%; max-width:600px; padding-bottom: 56.25%; height:100%"
-						<iframe class="mySlides1" width="1917" height="1004" src="https://www.youtube.com/embed/du1VECmZ8L8?start=14" style="border-radius:20px;box-shadow: 4px 4px gray"></iframe>
+					<div class="auto-resizable-iframe">
+						<div>
+							<iframe frameborder="0" class="mySlides1" src="https://www.youtube.com/embed/du1VECmZ8L8?start=14" style="border-radius:20px;box-shadow: 4px 4px gray"></iframe>
+						</div>
 					</div>
 			</div>
 			<div class="w3-padding-16 w3-right">
