@@ -136,10 +136,10 @@
 			<h5 class="tstyle-raleway">First off, influence maps <strong>do not need to be calculated every frame</strong>. For most large-scale decision making, influence can be calculated as needed. Because there can be time between each query, the influence mapping process can be interrupted allowing for the game to still run smoothly (Millington, 524).</h5>
 			<br>
 			<br>
-			<h5 class="tstyle-raleway">There are also ways to alter the speed of processing. Millington also lists three methods for this on pages 514 to 516 . I implemented one of them and the article by Alex Champandad implements a different one. The three methods are:</h5>
+			<h5 class="tstyle-raleway">There are also ways to alter the speed of processing. Millington also lists three methods for this on pages 514 to 516 . I implemented one of them and the article by Alex Champandard implements a different one. The three methods are:</h5>
 			<ul>
 				<li class="tstyle-raleway"><h5><strong>Radius - I implemented this one. Each unit has a different radius set and won’t contribute any more influence past that radius.</strong></h5></li>
-				<li class="tstyle-raleway"><h5><strong>Convolution filtering - This one was implemented by Champandad and involves blurring the influence over a series of passes. The benefits of this are that it can be offloaded to be calculated on the GPU, thus speeding up processing (Millington, 516).</strong></h5></li>
+				<li class="tstyle-raleway"><h5><strong>Convolution filtering - This one was implemented by Champandard and involves blurring the influence over a series of passes. The benefits of this are that it can be offloaded to be calculated on the GPU, thus speeding up processing (Millington, 516).</strong></h5></li>
 				<li class="tstyle-raleway"><h5>Map flooding - This one just assumes that influence does not decay over distance. Instead, it uses Dijkstra’s Algorithm to spread and the influence at any one square is equal to the largest contributed by any single unit (Millington, 516).</h5></li>
 			</ul>
 			<h5 class="tstyle-raleway">Examples of the radius and convolution filtering methods can be seen below:</h5>
@@ -155,17 +155,21 @@
 				<button class="w3-button w3-dark-gray" onclick="plusDivs(1, 0)">&#10095;</button>
 			</div>
 		</div>
+	</div>
+	<div class="w3-row">
 		<div class="w3-container w3-half w3-mobile w3-white" style="padding-left:64px;padding-right:64px">
 			<img src="/images/influencemaps/radius.gif" align="left" alt="Radius influence gif" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px gray">
+			<h5 class="tstyle-raleway"><i>Switching between different influence maps with influence determined by the radius method</i></h5>
+
 		</div>
 		<div class="w3-container w3-half w3-mobile w3-white" style="padding-left:64px;padding-right:64px">
 			<img src="/images/influencemaps/convolution.gif" align="left" alt="Convolution filtering influence gif" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px gray">
+			<h5 class="tstyle-raleway"><i>Convolution method (from Champandard's article)</i></h5>
 		</div>
-		
 	</div>
 	<!-- GENRES / PLATFORM SUSTAINABILITY -->
 	<div id="article-content-genres-and-platforms" class="w3-row">
-		<div class="w3-container w3-half w3-mobile w3-dark-gray" style="padding-left:64px;padding-right:64px">
+		<div class="w3-container w3-half w3-mobile w3-white" style="padding-left:64px;padding-right:64px">
 			<h1 class="tstyle-raleway"><u><strong>Genres and Platforms</strong></u></h1>
 			
 			<h5 class="tstyle-raleway">How fun would a strategy game be if the AI sat there or just acted randomly? Probably not that fun. But I would argue that it’s more fun than an AI knowing absolutely everything and acting like a robot. The average AI should be somewhere between being a total rookie and a grandmaster. Part of the answer to making a “human-like” AI is the use of <strong>Tactical Analysis (AKA influence maps)</strong>. The simplest example of an influence map I can conjure up can be seen on the right</h5>
@@ -176,7 +180,7 @@
 			<h5 class="tstyle-raleway">While in my initial example I used units, influence maps are not limited to just military units. Alex Champandard’s article on gamedev.net talks about three broad categories that influence maps could fall into: <strong>situation summary</strong> maps, <strong>historical statistics</strong> maps, and <strong>future prediction</strong> maps.</h5>
 			<h5 class="tstyle-raleway"><strong>For this project, my tech demo focused on Situation Summary maps</strong></h5>
 		</div>
-		<div class="w3-half w3-dark-gray">
+		<div class="w3-half w3-white">
 			<div class="w3-container w3-mobile w3-left-align">
 					<img src="/images/influencemaps/example1.png" align="left" alt="Example Influence Map" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px gray">
 					
