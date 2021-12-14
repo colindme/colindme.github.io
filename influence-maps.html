@@ -124,8 +124,13 @@
 		</div>
 		<div class="w3-half w3-gray">
 			<div class="w3-container w3-mobile w3-left-align">
-					<img src="/images/influencemaps/example1.png" align="left" alt="Example Influence Map" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px gray">
-					
+					<img class="mySlides1" src="/images/influencemaps/lineardropoff.png" align="left" alt="Example showing linear drop off" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px gray">
+					<img class="mySlides1" src="/images/influencemaps/sqrtdropoff.png" align="left" alt="Example showing sqrt drop off" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px gray">
+					<img class="mySlides1" src="/images/influencemaps/expodropoff.png" align="left" alt="Example showing exponential dropoff" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px gray">
+			</div>
+			<div class="w3-padding-16 w3-right">
+				<button class="w3-button w3-dark-gray" onclick="plusDivs(-1, 0)">&#10094;</button>
+				<button class="w3-button w3-dark-gray" onclick="plusDivs(1, 0)">&#10095;</button>
 			</div>
 		</div>
 	</div>
@@ -165,5 +170,25 @@
 		</div>
 	</footer>
 	
+	<script>
+		var slideIndex = [1];
+		var slideId = ["mySlides1"]
+		showDivs(1, 0);
+
+		function plusDivs(n, no) {
+			showDivs(slideIndex[no] += n, no);
+		}
+
+		function showDivs(n, no) {
+			var i;
+			var x = document.getElementsByClassName(slideId[no]);
+			if (n > x.length) {slideIndex[no] = 1}
+			if (n < 1) {slideIndex[no] = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			x[slideIndex[no]-1].style.display = "inline";  
+		}
+	</script>
   </body>
 </html>
