@@ -123,7 +123,6 @@
 			<h1 class="tstyle-raleway"><u><strong>How to Calculate Influence?</strong></u></h1>
 			
 			<h5 class="tstyle-raleway">Millington writes about three equations to calculate the influence of a square (from a specific source of influence). They are listed on page 513 and examples can be seen on the right.</h5>
-			<br>
 			<ul>
 				<li class="tstyle-raleway"><h5><strong>Linear dropoff: influence = initInfluence / (1 + distance)</strong></h5></li>
 				<li class="tstyle-raleway"><h5><strong>Sqrt dropoff: influence = initInfluence / sqrt(1 + distance)</strong></h5></li>
@@ -136,7 +135,16 @@
 			<br>
 			<h5 class="tstyle-raleway">Just doing the base implementation brings about some issues with performance. According to Millington, “execution time is <strong>O(nm)</strong>, and memory is <strong>O(m)</strong>, where m is the number of locations in the level, and n is the number of units” (514). This will pose a big issue if the grid gets large and enough units are placed. However, there are a few ways to improve this.</h5>
 			<h5 class="tstyle-raleway">First off, influence maps <strong>do not need to be calculated every frame</strong>. For most large-scale decision making, influence can be calculated as needed. Because there can be time between each query, the influence mapping process can be interrupted allowing for the game to still run smoothly (Millington, 524).</h5>
-			
+			<br>
+			<br>
+			<h5 class="tstyle-raleway">There are also ways to alter the speed of processing. Millington also lists three methods for this on pages 514 to 516 . I implemented one of them and the article by Alex Champandad implements a different one. The three methods are:</h5>
+			<ul>
+				<li class="tstyle-raleway"><h5><strong>Radius - I implemented this one. Each unit has a different radius set and won’t contribute any more influence past that radius.</strong></h5></li>
+				<li class="tstyle-raleway"><h5><strong>Convolution filtering - This one was implemented by Champandad and involves blurring the influence over a series of passes. The benefits of this are that it can be offloaded to be calculated on the GPU, thus speeding up processing (Millington, 516).</strong></h5></li>
+				<li class="tstyle-raleway"><h5>Map flooding - This one just assumes that influence does not decay over distance. Instead, it uses Dijkstra’s Algorithm to spread and the influence at any one square is equal to the largest contributed by any single unit (Millington, 516).</h5></li>
+			</ul>
+			<h5 class="tstyle-raleway">Examples of the radius and convolution filtering methods can be seen below</h5>
+
 		</div>
 		<div class="w3-half w3-gray">
 			<div class="w3-container w3-mobile w3-left-align">
