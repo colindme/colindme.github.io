@@ -177,18 +177,17 @@
 		<div class="w3-container w3-half w3-mobile w3-white" style="padding-left:64px;padding-right:64px">
 			<h1 class="tstyle-raleway"><u><strong>Genres and Platforms</strong></u></h1>
 			
-			<h5 class="tstyle-raleway">How fun would a strategy game be if the AI sat there or just acted randomly? Probably not that fun. But I would argue that it’s more fun than an AI knowing absolutely everything and acting like a robot. The average AI should be somewhere between being a total rookie and a grandmaster. Part of the answer to making a “human-like” AI is the use of <strong>Tactical Analysis (AKA influence maps)</strong>. The simplest example of an influence map I can conjure up can be seen on the right</h5>
-			<br>
-			<h5 class="tstyle-raleway">In this case, a unit is on the grid (where the influence is highest). From there, its influence decays as it spreads into the neighboring tiles. If more units were present, their influence could combine (if they are friendly) or combat (if they are enemies). What this allows is a <strong>representation of the state of a graph/world/combat in a numerical way that an AI can analyze.</strong></h5>
+			<h5 class="tstyle-raleway">All my sources listed the RTS genre as the starting place of influence maps which makes sense. Influence maps allow for dynamic reevaluation of a game world which is important when trying to do strategy in real time. There are a few cases where influence mapping might not be required. If the map you are implementing is really simple, you don’t really need to map it out (Champandad). For example, if everything takes place on an open plain, just use distance based calculations. Any game where the AI does not have to make complicated decisions probably does not require any kind of influence mapping (e.g. platformer where enemies follow a path or behavior that can be implemented using a behavior tree).</h5>
 			<br>
 			<br>
-			<h5 class="tstyle-raleway">While in my initial example I used units, influence maps are not limited to just military units. Alex Champandard’s article on gamedev.net talks about three broad categories that influence maps could fall into: <strong>situation summary</strong> maps, <strong>historical statistics</strong> maps, and <strong>future prediction</strong> maps.</h5>
-			<h5 class="tstyle-raleway"><strong>For this project, my tech demo focused on Situation Summary maps</strong></h5>
+			<h5 class="tstyle-raleway">One interesting application I found is a paper about using influence mapping during pathfinding. What it found is that, “Influence map-based pathfinding opens a new possibility in pathfinding. Paths become aware of their surroundings, events or game specific characteristics (e.g., sound, faction location, line of sight, etc.). Game agents are therefore better informed at path planning, and changing the way they navigate through their environments.” (Adaixo, 44). A lot of resources focused on units but as shown in my tech demo, it can also be used for decision making on a higher level (an AI figuring out where to expand). In an FPS, the enemy AI might be able to use influence mapping to make more calculated decisions against a player.</h5>
+			<br>
+			<br>
+			<h5 class="tstyle-raleway">As stated before, the base efficiency of influence maps is pretty bad although it can be improved. For split-second decisions, AI should probably delegate to something faster like a behavior tree. Because most parts of the algorithms can be interrupted, I think it could be adapted to a tile-based or strategy mobile game even though mobile devices do not have fast hardware. Influence maps overall have a lot of flexibility and potential and so should be considered a lot of the time when implementing an AI.</h5>
 		</div>
 		<div class="w3-half w3-white">
 			<div class="w3-container w3-mobile w3-left-align">
 					<img src="/images/influencemaps/example1.png" align="left" alt="Example Influence Map" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px gray">
-					
 			</div>
 		</div>
 	</div>
