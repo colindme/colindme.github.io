@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<!-- META TAGS -->
+	<meta charset="UTF-8">
+    <meta name="keywords" content="Game Programming, C++, C#, Unity Engine, Champlain College">
+    <meta name="author" content="Colin Deane">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio for Colin Deane, Programmer">
+	<!-- FONT -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<style>
+		.tstyle-raleway {
+			font-family: Raleway, sans-sarif;
+		}
+		.auto-resizable-iframe {
+			max-width: 650px;
+			margin: 0 auto;
+		}
+
+		.auto-resizable-iframe > div {
+			position: relative;
+			padding-bottom: 56.5%;
+			height: 0px;
+		}
+
+		.auto-resizable-iframe iframe {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+		}
+		
+		.auto-resizable-main-iframe {
+			max-width: 650px;
+			margin-left: auto;
+		}
+
+		.auto-resizable-main-iframe > div {
+			position: relative;
+			padding-bottom: 56.5%;
+			height: 0px;
+		}
+
+		.auto-resizable-main-iframe iframe {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+    <title>Colin Deane - Programmer</title>
+  </head>
+  <body>
+	<!-- NAVBAR -->
+	<div id="navbar">
+		<nav class="w3-center w3-padding w3-card w3-black w3-wide">
+			<a href="https://www.colindeane.me" class="tstyle-raleway w3-button w3-black w3-bar-item">Home</a>
+			<div class="w3-dropdown-hover">
+				<button class = "tstyle-raleway w3-button w3-black w3-bar-item w3-wide">Projects</button>
+				<div class="w3-dropdown-content w3-bar-block">
+						<a href="https://www.colindeane.me/influence-maps" class="w3-bar-item w3-button tstyle-raleway">Influence Maps</a>
+				</div>
+			</div>
+			<a href="resume.pdf" class="tstyle-raleway w3-button w3-black w3-bar-item">Resume</a>
+		</nav>
+	</div>
+	<!-- BANNER -->
+	<div id="banner" class="w3-padding-top48">
+		<div class="w3-display-container">
+			<img src="/images/banner.png" alt="Banner" style="width:100%">
+			
+			<div class="w3-center w3-display-middle w3-padding-small w3-hide-small w3-text-white">
+				<h1 class="tstyle-raleway w3-jumbo"><strong>Colin Deane</strong></h1>
+				<h1 class="tstyle-raleway w3-wide">Game Programming</h1>
+			</div>
+			
+			<div class="w3-center w3-display-middle w3-padding-small w3-hide-medium w3-hide-large w3-text-white">
+				<h3 class="tstyle-raleway"><strong>Colin Deane</strong></h3>
+				<h4 class="tstyle-raleway">Game Programming</h4>
+			</div>
+		</div>
+	</div>
+	<!-- FEATURED PROJECT -->
+	<div id="featured-project-banner" class="w3-display-container w3-white" style="height:100px">
+		<h1 class="tstyle-raleway w3-wide w3-center w3-display-middle w3-border w3-border-black w3-bottombar" style="width:55%"><strong>FEATURED PROJECT</strong></h1>
+	</div>
+	<div id="featured-project-content" class="w3-row w3-padding-24">
+		<div class="w3-half w3-white">
+			<div class="w3-container w3-mobile w3-right-align">
+				<div class="auto-resizable-main-iframe">
+				<iframe frameborder="0" class="mySlides1" src="https://www.youtube.com/embed/vOSQc6iJS9c" style="position:relative; height:400px; max-width=650px;border-radius:20px;box-shadow: 4px 4px gray"></iframe>
+				<img class="mySlides1" src="/images/stuffed/stuffed1.gif" align="right" alt="Stuffed! camera system showcase" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px gray">
+				<img class="mySlides1" src="/images/stuffed/stuffed2.gif" align="right" alt="Stuffed! grappling hook showcase" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px gray">
+				</div>
+			</div>
+			<div class="w3-padding-16 w3-right">
+				<button class="w3-button w3-dark-gray" onclick="plusDivs(-1, 0)">&#10094;</button>
+				<button class="w3-button w3-dark-gray" onclick="plusDivs(1, 0)">&#10095;</button>
+			</div>
+		</div>
+		<div class="w3-container w3-half w3-mobile" style="padding-left:64px;padding-right:64px">
+			<h1 class="tstyle-raleway"><u><strong>Stuffed!</strong></u></h1>
+			<h5 class="tstyle-raleway"><strong>What it is:</strong> An online 8-player third-person shooter/party game. Take control of a Tuffling and win the attention of your creator. Players have access to a variety of movement options such as ragdolling, custom gravity, and grappling hooks. This concept was created as part of my college capstone and was passed through greenlight to continue production in the following semester.</h5>
+			<h5 class="tstyle-raleway"><strong>What I did:</strong></h5>
+			<ul>
+				<li class="tstyle-raleway"><h5>Built on top of Unreal Engine's CharacterMovementComponent in C++ to create custom networked movement.</h5></li>
+				<li class="tstyle-raleway"><h5>Created a system in C++ to allow characters to have custom gravity in a networked environment.</h5></li>
+				<li class="tstyle-raleway"><h5>Utilized the Unreal Engine Online Subsystem to create a lobby hosting and joining system in C++</h5></li>
+				<li class="tstyle-raleway"><h5>Exposed backend C++ networking functionality to Blueprints to ease UI implementation</h5></li>
+				<li class="tstyle-raleway"><h5>Made spatial audio play for all clients using Blueprints.</h5></li>
+			</ul>
+			<h5 class="tstyle-raleway"><strong>Team size:</strong> 7</h5>
+			<h5 class="tstyle-raleway"><strong>Project time period:</strong> 12 weeks (September 2022 - November 2022)</h5>
+		</div>
+	</div>
+	<!-- ABOUT ME -->
+	<div id="about-me-banner" class="w3-display-container w3-gray" style="height:100px">
+		<h1 class="tstyle-raleway w3-wide w3-center w3-display-middle w3-border w3-border-black w3-bottombar" style="width:55%"><strong>ABOUT ME</strong></h1>
+	</div>
+	<div id="about-me-content" class="w3-container w3-row w3-gray w3-padding-16">
+		<div class="w3-container w3-half w3-center" style="width:50%;margin:auto;">
+			<h3 class="tstyle-raleway w3-right " style="width:50%;margin:auto;">Hi there! My name is Colin and I'm a game programmer specializing in network programming. I work in both Unity and Unreal Engine and have worked on both front-end and back-end systems. I have experience with C++, C#, Python, and Blueprints.</h4>
+		</div>
+		<div class="w3-container w3-half">
+			<img class="w3-center w3-half w3-circle" src="/images/me.png" style="max-width:300px;">
+		</div>
+	</div>
+	<!-- OTHER PROJECTS -->
+	<div id="other-projects-banner" class="w3-display-container w3-dark-gray" style="height:100px">
+		<h1 class="tstyle-raleway w3-wide w3-center w3-display-middle w3-border w3-border-white w3-bottombar" style="width:55%"><strong>OTHER PROJECTS</strong></h1>
+	</div>
+	<div id="other-projects-row-1" class="w3-row-padding w3-dark-gray">
+		<div class="w3-container w3-dark-gray w3-half w3-mobile" style="padding-left:64px;padding-right:64px">
+			<h1 class="tstyle-raleway w3-center"><u><strong>Back in my Day</strong></u></h1>
+			<div class="w3-center">
+				<div class="auto-resizable-iframe" >
+				<iframe frameborder="0" class="mySlides2" src="https://www.youtube.com/embed/3wyhuWJwALM" style="position:relative; height:400px; max-width=650px;border-radius:20px;box-shadow: 4px 4px gray"></iframe>
+				<img class="mySlides2" align="center" src="/images/backday/backdayscreenshot1.png" alt="Back in my Day" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px 4px 4px gray">
+				<img class="mySlides2" align="center" src="/images/backday/backdayscreenshot2.png" alt="Back in my Day" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px 4px 4px gray">
+				</div>
+			</div>
+			<div class="w3-center w3-padding-16">
+				<button class="w3-button w3-gray w3-center" onclick="plusDivs(-1, 1)">&#10094;</button>
+				<button class="w3-button w3-gray w3-center" onclick="plusDivs(1, 1)">&#10095;</button>
+			</div>
+			<h5 class="tstyle-raleway"><strong>What it is:</strong> An online co-op game all about fighting bullies while trying to get to school. Players can pick up various items to boost their stats and use special weapons with their buddy. Back in my Day was created in 10 weeks for the <strong>2022 Ubisoft Game Lab Competition and was nominated for best game design</strong>. The game was created in Unity and networked using the Steam backend and Facepunch Steamworks. Check it out on itch.io here: <a href="https://jollycoopco.itch.io/backinmyday">jollycoopco.itch.io/backinmyday</a>.</h5>
+			<h5 class="tstyle-raleway"><strong>What I did:</strong></h5>
+			<ul>
+				<li class="tstyle-raleway"><h5>Implemented data serialization for packets so information could be sent across the network.</h5></li>
+				<li class="tstyle-raleway"><h5>Created a framework for Remote Procedure Calls to call functionality between clients and server.</h5></li>
+				<li class="tstyle-raleway"><h5>Added networked movement for objects that move during the game (players, AI, obstacles).</h5></li>
+				<li class="tstyle-raleway"><h5>Synchronized narrative beats and other sound effects between players.</h5></li>
+				<li class="tstyle-raleway"><h5>Used the Steam lobby backend to create a simple matchmaking system.</h5></li>
+			</ul>
+			<h5 class="tstyle-raleway"><strong>Team size:</strong> 8</h5>
+			<h5 class="tstyle-raleway"><strong>Project time period:</strong> 10 weeks (February 2022 - April 2022)</h5>
+		</div>
+		<div class="w3-container w3-dark-gray w3-half w3-mobile" style="padding-left:64px;padding-right:64px">
+			<h1 class="tstyle-raleway w3-center"><u><strong>Busy Bee Movers</strong></u></h1>
+			<div class="w3-center">
+				<div class="auto-resizable-iframe" >
+				<iframe frameborder="0" class="mySlides5" src="https://www.youtube.com/embed/du1VECmZ8L8" style="position:relative; height:400px; max-width=650px;border-radius:20px;box-shadow: 4px 4px gray"></iframe>
+				<img class="mySlides5" align="center" src="/images/busybeemovers/screenshot1.PNG" alt="Busy Bee Title" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px 4px 4px gray">
+				<img class="mySlides5" align="center" src="/images/busybeemovers/screenshot2.PNG" alt="Busy Bee Screenshot" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px 4px 4px gray">
+				</div>
+			</div>
+			<div class="w3-center w3-padding-16">
+				<button class="w3-button w3-gray w3-center" onclick="plusDivs(-1, 4)">&#10094;</button>
+				<button class="w3-button w3-gray w3-center" onclick="plusDivs(1, 4)">&#10095;</button>
+			</div>
+			<h5 class="tstyle-raleway"><strong>What it is:</strong> A side-scrolling co-op game about moving a TV through a city. Each character can only see in front of them so players have to communicate to safely get through obstacles. Supports LAN / online play. This game was created in Unreal Engine for the ArtCenter 2021 Game Jam. It <strong>won the Best in Theme award</strong> and placed second in the community vote. Check it out here: <a href="https://rhyssullivan.itch.io/busybeemovers">rhyssullivan.itch.io/busybeemovers</a>.</h5>
+			<h5 class="tstyle-raleway"><strong>What I did:</strong></h5>
+			<ul>
+				<li class="tstyle-raleway"><h5>Networked obstacles using Blueprints.</h5></li>
+				<li class="tstyle-raleway"><h5>Created and programmed UI using Unreal's UMG system.</h5></li>
+				<li class="tstyle-raleway"><h5>Implemented checkpoints.</h5></li>
+				<li class="tstyle-raleway"><h5>Bugfixing.</h5></li>
+			</ul>
+			<h5 class="tstyle-raleway"><strong>Team size:</strong> 2</h5>
+			<h5 class="tstyle-raleway"><strong>Project time period:</strong> 48 hours (March 2021)</h5>
+		</div>
+	</div>
+	<div id="other-projects-row-2" class="w3-row-padding w3-dark-gray">
+		<div class="w3-container w3-dark-gray w3-half w3-mobile" style="padding-left:64px;padding-right:64px">
+			<h1 class="tstyle-raleway w3-center"><u><strong>Party Cards</strong></u></h1>
+			<div class="w3-center">
+				<img class="mySlides4" align="center" src="/images/partycards/PartyCardsTitle.png" alt="Party Cards Title" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px 4px 4px gray">
+				<img class="mySlides4" align="center" src="/images/partycards/partycardsscreenshot.PNG" alt="Part Cards screenshot" style="max-height:330px;max-width:650px;border-radius:20px;box-shadow: 4px 4px 4px 4px gray">
+				<img class="mySlides4" align="center" src="/images/partycards/partycardsgif.gif" alt="Party Cards throwing" style="max-height:330px;max-width:650px;border-radius:20px;box-shadow: 4px 4px 4px 4px gray">
+			</div>
+			<div class="w3-center w3-padding-16">
+				<button class="w3-button w3-gray w3-center" onclick="plusDivs(-1, 3)">&#10094;</button>
+				<button class="w3-button w3-gray w3-center" onclick="plusDivs(1, 3)">&#10095;</button>
+			</div>
+			<h5 class="tstyle-raleway"><strong>What it is:</strong> Party Cards is a mobile local multiplayer game aimed to be played, unsurprisingly, in party situations. I learned about and did paired programming with a recent Champlain College alumni for Party Cards. This project was still in the early stages so most of the work was for the backend and UI.</h5>
+			<h5 class="tstyle-raleway"><strong>What I did:</strong></h5>
+			<ul>
+				<li class="tstyle-raleway"><h5>Flinging cards</h5></li>
+				<li class="tstyle-raleway"><h5>Touch controls</h5></li>
+				<li class="tstyle-raleway"><h5>Deck creation and card filters</h5></li>
+				<li class="tstyle-raleway"><h5>Different style sheets</h5></li>
+				<li class="tstyle-raleway"><h5>Model-view-viewmodel implementation</h5></li>
+			</ul>
+			<h5 class="tstyle-raleway"><strong>Team size:</strong> 2</h5>
+			<h5 class="tstyle-raleway"><strong>Project time period:</strong> 6 months (January 2021 - July 2021)</h5>
+		</div>
+		<div class="w3-container w3-dark-gray w3-half w3-mobile" style="padding-left:64px;padding-right:64px">
+			<h1 class="tstyle-raleway w3-center"><u><strong>Focus Pocus</strong></u></h1>
+			<div class="w3-center">
+				<img class="mySlides3" align="center" src="/images/focuspocus/FocusPocusTitle.png" alt="Focus Pocus Title" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px 4px 4px gray">
+				<img class="mySlides3" align="center" src="/images/focuspocus/focuspocusscreenshot.png" alt="Focus Pocus screenshot" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px 4px 4px gray">
+				<img class="mySlides3" align="center" src="/images/focuspocus/focuspocusgif.gif" alt="Focus Pocus throwing" style="width:100%;max-width:650px;border-radius:20px;box-shadow: 4px 4px 4px 4px gray">
+			</div>
+			<div class="w3-center w3-padding-16">
+				<button class="w3-button w3-gray w3-center" onclick="plusDivs(-1, 2)">&#10094;</button>
+				<button class="w3-button w3-gray w3-center" onclick="plusDivs(1, 2)">&#10095;</button>
+			</div>
+			<h5 class="tstyle-raleway"><strong>What it is:</strong> Focus Pocus is a game where the player has to balance completing the task they are assigned and keeping boredom down by playing with other objects around the classroom. This project was aimed to educate younger students about ADHD who may not know about it.</h5>
+			<h5 class="tstyle-raleway"><strong>What I did:</strong></h5>
+			<ul>
+				<li class="tstyle-raleway"><h5>Task system for players to interact with</h5></li>
+				<li class="tstyle-raleway"><h5>Physics for throwing objects around</h5></li>
+				<li class="tstyle-raleway"><h5>Shaders</h5></li>
+				<li class="tstyle-raleway"><h5>UI Programming</h5></li>
+				<li class="tstyle-raleway"><h5>Objects utilizing Unity's hinges</h5></li>
+			</ul>
+			<h5 class="tstyle-raleway"><strong>Team size:</strong> 7</h5>
+			<h5 class="tstyle-raleway"><strong>Project time period:</strong> 4 weeks (February 2021 - March 2021)</h5>
+		</div>
+	</div>
+	<!-- FOOTER -->
+	<footer class=" w3-container w3-padding w3-black w3-center">
+		<h1 class="tstyle-raleway">Follow/Contact me</h1>
+		<div class ="w3-container w3-xxlarge">
+			<a href="https://github.com/colindme"><i class="fa fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/colin-deane/"><i class="fa fa-linkedin"></i></a>
+		</div>
+		<div class="w3-container">
+			<a href="mailto:colin.w.deane@gmail.com">
+				<i class="fa fa-envelope w3-xxlarge"></i>
+				<h3 style="tstyle-raleway">colin.w.deane@gmail.com</h3>
+			</a>
+		</div>
+	</footer>
+	
+	<script>
+		var slideIndex = [1,1,1,1,1];
+		var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5"]
+		showDivs(1, 0);
+		showDivs(1, 1);
+		showDivs(1, 2);
+		showDivs(1, 3);
+		showDivs(1, 4);
+
+		function plusDivs(n, no) {
+			showDivs(slideIndex[no] += n, no);
+		}
+
+		function showDivs(n, no) {
+			var i;
+			var x = document.getElementsByClassName(slideId[no]);
+			if (n > x.length) {slideIndex[no] = 1}
+			if (n < 1) {slideIndex[no] = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			x[slideIndex[no]-1].style.display = "inline";  
+		}
+</script>
+	
+  </body>
+</html>

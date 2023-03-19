@@ -1,0 +1,14 @@
+.banner {
+    background-image: url('images/banner.png');
+    background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+* {
+ font-family: Raleway, sans-sarif;
+}
+
+.giant {
+	
+}
