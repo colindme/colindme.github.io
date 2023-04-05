@@ -1,10 +1,11 @@
 .banner {
     /*background-image: url('images/banner.webp');*/
 	background-position: center;
+	background-size: cover;
 }
 
 * {
- font-family: Raleway, sans-sarif;
+ font-family: Montserrat, sans-sarif;
 }
 
 .giant {
