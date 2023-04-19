@@ -6,6 +6,7 @@ var phrases= [
     "spend my mornings practicing Japanese",
     "play video games for just a bit too long",
     "occasionally run (when kept accountable)",
+    "hang out with my cat and dog",
     "spend extra time making stuff like this"
 ];
 var writeSpeed = 45;
