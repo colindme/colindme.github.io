@@ -2,13 +2,16 @@ var i =0;
 var phraseIndex = 0;
 var writing=true;
 var phrases= [
-    "Test 1",
-    "Test 2",
-    "Test 3"
+    "enjoy hiking in unsafe temperatures",
+    "spend my mornings practicing Japanese",
+    "play video games for just a bit too long",
+    "occasionally run (when kept accountable)",
+    "spend extra time making stuff like this"
 ];
-var writeSpeed = 100;
-var endPause = 1000;
-var eraseSpeed = 75;
+var writeSpeed = 45;
+var fullPause = 1500;
+var emptyPause = 300;
+var eraseSpeed = 40;
 
 function typeWriter() {
     if(writing)
@@ -24,7 +27,7 @@ function typeWriter() {
             else
             {
                 writing = false;
-                setTimeout(typeWriter, endPause);
+                setTimeout(typeWriter, fullPause);
             }
             
         }
@@ -44,7 +47,7 @@ function typeWriter() {
             {
                 chooseNextPhrase();
                 writing = true;
-                setTimeout(typeWriter, endPause);
+                setTimeout(typeWriter, emptyPause);
             }
         }
     }

@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	<title>Colin Deane - Programmer</title>
 	<script type="text/javascript">
+		window.onload = typeWriter;
+
 		document.addEventListener("DOMContentLoaded", function(){
 			// make it as accordion for smaller screens
 			if (window.innerWidth > 992) {
@@ -181,9 +183,8 @@
 				<div class="text-center">
 					<h4 class="py-3"><strong>Hi there!</strong></h4>
 					<h5 class="py-3">My name is Colin and I'm a game programmer specializing in network and systems programming. I work in both Unity and Unreal Engine and have worked on both front-end and back-end systems. I have experience with C++, C#, Python, and Blueprints.</h5>
-					<h5 id="showcase" class="py-3">Besides making games, I enjoy hiking, learning Japanese, and of course, playing games.</h5>
-					<h5 id="typewriter" class="typewriter">I am </h5>
-					<button onclick="typeWriter()">Click me</button>
+					<h5 id="showcase" >Besides making games, I...</h5>
+					<h4><strong id="typewriter" class="typewriter"></strong></h4>
 				</div>
 			</div>
 			<!-- Featured project content-->
