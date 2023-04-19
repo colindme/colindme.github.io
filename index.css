@@ -8,6 +8,22 @@
  font-family: Montserrat, sans-sarif;
 }
 
+.typewriter::after {
+	content: 'hi hi';
+	
+	border-left: transparent solid 1px;
+	margin: 5px;
+
+	animation: blink;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	
+};
+
+@keyframes blink {
+	50% {border-left: 1px solid #333;}
+}
+
 .giant {
 	
 }
